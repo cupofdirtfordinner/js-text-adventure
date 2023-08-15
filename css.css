@@ -1,0 +1,58 @@
+#log {
+  position: relative;
+  margin-top: 0;
+  margin-left: 0;
+  width: calc(50vw - 10px);
+  height: calc(100vh - 10px);
+  border-style: inset;
+  float: left;
+  overflow-y: scroll;
+  
+  background-color: black;
+  color: #2cff29;
+  font-family: monospace;
+}
+#parentdiv {
+  background-color: #4a4a4a;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100vw - 10px);
+  height: calc(100vh - 10px);
+  border-style: inset;
+  word-wrap: yes;
+}
+
+@media screen and (min-width: 1250px) {
+  #interactions {
+    float: left;
+  }
+  #broken {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  #interactions {
+    float: left;
+    background-color: red;
+  }
+  #broken {
+    display: inherit;
+  }
+}
+
+#interactions * {
+  float: left;
+  background-color: grey;
+  color: white;
+  
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+#yeah {color: green}
